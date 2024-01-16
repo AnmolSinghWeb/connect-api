@@ -1,0 +1,14 @@
+version: '3'
+services:
+    db_test:
+        image: post:api
+        restart: always
+        build:
+            context: .
+            dockerfile: Dockerfile.postgres.api
+        environment:
+            POSTGRES_PASSWORD: 'pg123'
+            POSTGRES_USER: 'pg123'
+        container_name: db_api
+        ports:
+            - 5432:5432

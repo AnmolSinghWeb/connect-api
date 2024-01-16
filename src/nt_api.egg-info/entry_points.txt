@@ -1,0 +1,2 @@
+[console_scripts]
+nt_api = application:main
