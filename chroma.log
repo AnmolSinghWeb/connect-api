@@ -154,3 +154,162 @@ chromadb.db.base.UniqueConstraintError: Collection my_collection already exists
 [32mINFO[0m:     [16-01-2024 00:40:48] Waiting for application shutdown.
 [32mINFO[0m:     [16-01-2024 00:40:48] Application shutdown complete.
 [32mINFO[0m:     [16-01-2024 00:40:48] Finished server process [[36m52377[0m]
+[32mINFO[0m:     [16-01-2024 01:56:53] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [16-01-2024 01:56:53] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [16-01-2024 01:56:53] Starting component System
+[36mDEBUG[0m:    [16-01-2024 01:56:53] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [16-01-2024 01:56:53] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [16-01-2024 01:56:53] Starting component SqliteDB
+[36mDEBUG[0m:    [16-01-2024 01:56:53] Starting component Posthog
+[36mDEBUG[0m:    [16-01-2024 01:56:53] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [16-01-2024 01:56:53] Starting component SegmentAPI
+[32mINFO[0m:     [16-01-2024 01:56:53] Started server process [[36m67824[0m]
+[32mINFO[0m:     [16-01-2024 01:56:53] Waiting for application startup.
+[32mINFO[0m:     [16-01-2024 01:56:53] Application startup complete.
+[32mINFO[0m:     [16-01-2024 01:56:53] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [16-01-2024 01:57:49] 127.0.0.1:58435 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 01:57:49] 127.0.0.1:58435 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:00:22] 127.0.0.1:58597 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:00:22] 127.0.0.1:58597 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:00:22] 127.0.0.1:58598 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:00:22] 127.0.0.1:58598 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:00:22] 127.0.0.1:58599 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:00:22] 127.0.0.1:58599 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:00:27] 127.0.0.1:58610 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:00:27] 127.0.0.1:58610 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [16-01-2024 02:00:27] Starting component PersistentLocalHnswSegment
+[33mWARNING[0m:  [16-01-2024 02:00:27] Add of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 02:00:27] Add of existing embedding ID: id2
+[33mWARNING[0m:  [16-01-2024 02:00:27] Insert of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 02:00:27] Insert of existing embedding ID: id2
+[32mINFO[0m:     [16-01-2024 02:00:27] 127.0.0.1:58610 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/add HTTP/1.1" 201
+[32mINFO[0m:     [16-01-2024 02:00:27] 127.0.0.1:58610 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/get HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:55:43] 127.0.0.1:61948 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:55:43] 127.0.0.1:61948 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:55:43] 127.0.0.1:61949 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:55:43] 127.0.0.1:61949 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:55:43] 127.0.0.1:61950 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:55:43] 127.0.0.1:61950 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:55:50] 127.0.0.1:61960 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:55:50] 127.0.0.1:61960 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [16-01-2024 02:55:50] Add of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 02:55:50] Add of existing embedding ID: id2
+[33mWARNING[0m:  [16-01-2024 02:55:50] Insert of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 02:55:50] Insert of existing embedding ID: id2
+[32mINFO[0m:     [16-01-2024 02:55:50] 127.0.0.1:61960 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/add HTTP/1.1" 201
+[32mINFO[0m:     [16-01-2024 02:55:50] 127.0.0.1:61960 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/get HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:57:47] Shutting down
+[32mINFO[0m:     [16-01-2024 02:57:47] Waiting for application shutdown.
+[32mINFO[0m:     [16-01-2024 02:57:47] Application shutdown complete.
+[32mINFO[0m:     [16-01-2024 02:57:47] Finished server process [[36m67824[0m]
+[32mINFO[0m:     [16-01-2024 02:57:49] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [16-01-2024 02:57:49] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [16-01-2024 02:57:49] Starting component System
+[36mDEBUG[0m:    [16-01-2024 02:57:49] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [16-01-2024 02:57:49] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [16-01-2024 02:57:49] Starting component SqliteDB
+[36mDEBUG[0m:    [16-01-2024 02:57:49] Starting component Posthog
+[36mDEBUG[0m:    [16-01-2024 02:57:49] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [16-01-2024 02:57:49] Starting component SegmentAPI
+[32mINFO[0m:     [16-01-2024 02:57:49] Started server process [[36m95037[0m]
+[32mINFO[0m:     [16-01-2024 02:57:49] Waiting for application startup.
+[32mINFO[0m:     [16-01-2024 02:57:49] Application startup complete.
+[32mINFO[0m:     [16-01-2024 02:57:49] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [16-01-2024 02:57:54] 127.0.0.1:62113 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:57:54] 127.0.0.1:62113 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:57:54] 127.0.0.1:62114 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:57:54] 127.0.0.1:62114 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:57:54] 127.0.0.1:62115 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:57:54] 127.0.0.1:62115 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:57:59] 127.0.0.1:62122 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 02:57:59] 127.0.0.1:62122 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[36mDEBUG[0m:    [16-01-2024 02:57:59] Starting component PersistentLocalHnswSegment
+[33mWARNING[0m:  [16-01-2024 02:57:59] Add of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 02:57:59] Add of existing embedding ID: id2
+[33mWARNING[0m:  [16-01-2024 02:57:59] Add of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 02:57:59] Add of existing embedding ID: id2
+[33mWARNING[0m:  [16-01-2024 02:57:59] Add of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 02:57:59] Add of existing embedding ID: id2
+[33mWARNING[0m:  [16-01-2024 02:57:59] Insert of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 02:57:59] Insert of existing embedding ID: id2
+[32mINFO[0m:     [16-01-2024 02:57:59] 127.0.0.1:62122 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/add HTTP/1.1" 201
+[32mINFO[0m:     [16-01-2024 02:57:59] 127.0.0.1:62122 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:25] 127.0.0.1:62590 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:25] 127.0.0.1:62590 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:25] 127.0.0.1:62591 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:25] 127.0.0.1:62591 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:25] 127.0.0.1:62592 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:25] 127.0.0.1:62592 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:29] 127.0.0.1:62599 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:29] 127.0.0.1:62599 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:29] 127.0.0.1:62600 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:29] 127.0.0.1:62600 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:29] 127.0.0.1:62601 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:29] 127.0.0.1:62601 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:37] 127.0.0.1:62613 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:05:37] 127.0.0.1:62613 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [16-01-2024 03:05:37] Add of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 03:05:37] Add of existing embedding ID: id2
+[33mWARNING[0m:  [16-01-2024 03:05:37] Insert of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 03:05:37] Insert of existing embedding ID: id2
+[32mINFO[0m:     [16-01-2024 03:05:37] 127.0.0.1:62613 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/add HTTP/1.1" 201
+[32mINFO[0m:     [16-01-2024 03:05:37] 127.0.0.1:62613 - "GET /api/v1 HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:38:33] 127.0.0.1:64558 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:38:33] 127.0.0.1:64558 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:38:33] 127.0.0.1:64559 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:38:33] 127.0.0.1:64559 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:38:33] 127.0.0.1:64560 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:38:33] 127.0.0.1:64560 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:38:35] 127.0.0.1:64567 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [16-01-2024 03:38:35] 127.0.0.1:64567 - "GET /api/v1/pre-flight-checks HTTP/1.1" 200
+[33mWARNING[0m:  [16-01-2024 03:38:35] Add of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 03:38:35] Add of existing embedding ID: id2
+[33mWARNING[0m:  [16-01-2024 03:38:35] Insert of existing embedding ID: id1
+[33mWARNING[0m:  [16-01-2024 03:38:35] Insert of existing embedding ID: id2
+[32mINFO[0m:     [16-01-2024 03:38:35] 127.0.0.1:64567 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/add HTTP/1.1" 201
+[32mINFO[0m:     [16-01-2024 03:38:35] 127.0.0.1:64567 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/get HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:02:30] 127.0.0.1:50999 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:02:30] 127.0.0.1:50999 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:02:30] 127.0.0.1:51000 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:02:30] 127.0.0.1:51000 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:03:31] 127.0.0.1:51082 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:03:31] 127.0.0.1:51082 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:03:31] 127.0.0.1:51083 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:03:31] 127.0.0.1:51083 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:04:08] 127.0.0.1:51125 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:04:08] 127.0.0.1:51125 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:04:08] 127.0.0.1:51126 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:04:08] 127.0.0.1:51126 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:04:45] 127.0.0.1:51171 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:04:45] 127.0.0.1:51171 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:04:45] 127.0.0.1:51172 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:04:45] 127.0.0.1:51172 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:05:06] 127.0.0.1:51198 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:05:06] 127.0.0.1:51198 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:05:06] 127.0.0.1:51199 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:05:06] 127.0.0.1:51199 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:05:07] 127.0.0.1:51204 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:05:07] 127.0.0.1:51204 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:10] 127.0.0.1:51276 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:10] 127.0.0.1:51276 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:10] 127.0.0.1:51277 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:10] 127.0.0.1:51277 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:11] 127.0.0.1:51281 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:11] 127.0.0.1:51281 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:11] 127.0.0.1:51282 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:26] 127.0.0.1:51300 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:26] 127.0.0.1:51300 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:26] 127.0.0.1:51301 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:26] 127.0.0.1:51301 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:27] 127.0.0.1:51306 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:27] 127.0.0.1:51306 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:27] 127.0.0.1:51307 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:06:27] 127.0.0.1:51307 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/get HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:09:21] 127.0.0.1:51495 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:09:21] 127.0.0.1:51495 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:09:21] 127.0.0.1:51496 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:09:21] 127.0.0.1:51496 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:09:23] 127.0.0.1:51500 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:09:23] 127.0.0.1:51500 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:09:23] 127.0.0.1:51501 - "GET /api/v1/collections/my_collection?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [17-01-2024 12:09:23] 127.0.0.1:51501 - "POST /api/v1/collections/87c22c91-0fac-4b40-a7d7-c84f9b88e7b1/get HTTP/1.1" 200

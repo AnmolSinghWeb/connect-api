@@ -9,25 +9,35 @@ from api.storage \
     import session_factory
 from api._types.ntapimodel \
     import NtApiModel
-from api.storage.entities.users.users import Users
+import chromadb
+from chromadb.config import Settings
 
 class MUsers(NtApiModel):
 
     def __init__(self):
         super().__init__()
-        self.storage_model = Users
+    
+    def client(self):
+        return chromadb.HttpClient(host='localhost', port=8000, settings=Settings(allow_reset=True, anonymized_telemetry=False))
 
-    def get_all_users(self):
+
+    def get_collection(self):
         return_data = None
         errors = None
         session = None
+        
         try:
-            session = session_factory()
-            statement = session.query(self.storage_model)
-            return_data = []
-            for stat in statement:
-                return_data.append(self.storage_model.get_dict(stat))
-            session.close()
+            # collection = client.create_collection(name="my_collection")
+            client = self.client()
+            collection = client.get_collection(name="my_collection").get()
+            # collection.add(
+            #     embeddings=[[1.2, 2.3, 4.5], [6.7, 8.2, 9.2]],
+            #     documents=["This is a document", "This is another document"],
+            #     metadatas=[{"source": "my_source"}, {"source": "my_source"}],
+            #     ids=["id1", "id2"]
+            # )
+            # print(collection.get())
+            return_data = collection
         except exc.DatabaseError as exception:
             errors = [exception.statement]
             return_data = None
@@ -39,11 +49,10 @@ class MUsers(NtApiModel):
             return_data, errors = None, None
             print(exception)
         finally:
-            if session:
-                session.close()
+            print('finally')
         return return_data, errors
     
-    def add_user(self, request):
+    # def add_user(self, request):
         return_data = None
         errors = None
         session = None
