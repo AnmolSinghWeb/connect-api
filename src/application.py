@@ -7,7 +7,7 @@ from api.routes import init as ntfta_init
 from api.root import init as root_init
 import chromadb
 
-client = chroma_client = chromadb.HttpClient(host='localhost', port=8000)
+# client = chroma_client = chromadb.HttpClient(host='localhost', port=8000)
 
 application = appobj = Flask(__name__)
 app = Api(appobj)

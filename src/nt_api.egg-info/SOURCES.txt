@@ -13,7 +13,6 @@ src/api/models/m_users.py
 src/api/routes/__init__.py
 src/api/routes/r_users.py
 src/api/storage/__init__.py
-src/api/storage/entities/users/users.py
 src/api/utils/LoggableObject.py
 src/api/utils/sqlutils.py
 src/nt_api.egg-info/PKG-INFO

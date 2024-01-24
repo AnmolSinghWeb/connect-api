@@ -25,15 +25,6 @@ class RUsers(NtApiRoute):
     @validate_scope('foot_traffic.reports:read')
     def get(self, **kwargs):
         print('here')
-        # collection = client.create_collection(name="my_collection")
-        # collection = client.get_collection(name="my_collection")
-        # collection.add(
-        #     embeddings=[[1.2, 2.3, 4.5], [6.7, 8.2, 9.2]],
-        #     documents=["This is a document", "This is another document"],
-        #     metadatas=[{"source": "my_source"}, {"source": "my_source"}],
-        #     ids=["id1", "id2"]
-        # )
-        # print(collection.get())
         data, errors = None, None
         data, errors = self.controller.get_collection()
         return self.build_response(data, errors)
